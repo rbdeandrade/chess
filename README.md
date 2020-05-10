@@ -1,4 +1,4 @@
-## A-Frame Testes - Chess
+## A-Frame Tests - Chess
 
 ### Installation
 First make sure you have Phython installed.
