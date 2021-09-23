@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AR • Chess</title>
+    <meta name="description" content="AR • Chess">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='detectionMode: mono_and_matrix; trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+        
+        <a-assets>
+            <a-asset-item id='peao-obj' src='./res/peao.obj'></a-asset-item>
+            <a-asset-item id='peao-mtl' src='./res/peao.mtl'></a-asset-item>
+            <a-asset-item id='bispo-obj' src='./res/bispo.obj'></a-asset-item>
+            <a-asset-item id='bispo-mtl' src='./res/bispo.mtl'></a-asset-item>
+            <a-asset-item id='cavalo-obj' src='./res/cavalo.obj'></a-asset-item>
+            <a-asset-item id='cavalo-mtl' src='./res/cavalo.mtl'></a-asset-item>
+            <a-asset-item id='rainha-obj' src='./res/rainha.obj'></a-asset-item>
+            <a-asset-item id='rainha-mtl' src='./res/rainha.mtl'></a-asset-item>
+            <a-asset-item id='rei-obj' src='./res/rei.obj'></a-asset-item>
+            <a-asset-item id='rei-mtl' src='./res/rei.mtl'></a-asset-item>
+            <a-asset-item id='torre-obj' src='./res/torre.obj'></a-asset-item>
+            <a-asset-item id='torre-mtl' src='./res/torre.mtl'></a-asset-item>
+            <a-asset-item id='peaob-obj' src='./res/peaob.obj'></a-asset-item>
+            <a-asset-item id='peaob-mtl' src='./res/peaob.mtl'></a-asset-item>
+            <a-asset-item id='bispob-obj' src='./res/bispob.obj'></a-asset-item>
+            <a-asset-item id='bispob-mtl' src='./res/bispob.mtl'></a-asset-item>
+            <a-asset-item id='cavalob-obj' src='./res/cavalob.obj'></a-asset-item>
+            <a-asset-item id='cavalob-mtl' src='./res/cavalob.mtl'></a-asset-item>
+            <a-asset-item id='rainhab-obj' src='./res/rainhab.obj'></a-asset-item>
+            <a-asset-item id='rainhab-mtl' src='./res/rainhab.mtl'></a-asset-item>
+            <a-asset-item id='reib-obj' src='./res/reib.obj'></a-asset-item>
+            <a-asset-item id='reib-mtl' src='./res/reib.mtl'></a-asset-item>
+            <a-asset-item id='torreb-obj' src='./res/torreb.obj'></a-asset-item>
+            <a-asset-item id='torreb-mtl' src='./res/torreb.mtl'></a-asset-item>
+        </a-assets>
+
+<!-- First Player -->
+
+        <a-marker type='barcode' value='1'>
+            <a-entity obj-model='obj: #bispo-obj; mtl: #bispo-mtl' scale="10 10 10" rotation='0 0 0' position='1.5 -0.1 0.1'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='11'>
+            <a-entity obj-model='obj: #bispo-obj; mtl: #bispo-mtl' scale="10 10 10" rotation='0 0 0' position='1.5 -0.1 0.1'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='2'>
+            <a-entity obj-model='obj: #peao-obj; mtl: #peao-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='6'>
+            <a-entity obj-model='obj: #peao-obj; mtl: #peao-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='7'>
+            <a-entity obj-model='obj: #peao-obj; mtl: #peao-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='8'>
+            <a-entity obj-model='obj: #peao-obj; mtl: #peao-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='9'>
+            <a-entity obj-model='obj: #peao-obj; mtl: #peao-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='10'>
+            <a-entity obj-model='obj: #peao-obj; mtl: #peao-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='14'>
+            <a-entity obj-model='obj: #peao-obj; mtl: #peao-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='15'>
+            <a-entity obj-model='obj: #peao-obj; mtl: #peao-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='4'>
+            <a-entity obj-model='obj: #cavalo-obj; mtl: #cavalo-mtl' scale="10 10 10" rotation='0 0 0' position='1.5 -0.2 1'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='12'>
+            <a-entity obj-model='obj: #cavalo-obj; mtl: #cavalo-mtl' scale="10 10 10" rotation='0 0 0' position='1.5 -0.2 1'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='3'>
+            <a-entity obj-model='obj: #rainha-obj; mtl: #rainha-mtl' scale="10 10 10" rotation='0 0 0' position='1.3 -0.05 -1'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='5'>
+            <a-entity obj-model='obj: #rei-obj; mtl: #rei-mtl' scale="10 10 10" rotation='0 0 0' position='1.4 -0.1 -0.3'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='0'>
+            <a-entity obj-model='obj: #torre-obj; mtl: #torre-mtl' scale="10 10 10" rotation='0 0 0' position='1.3 -0.2 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='13'>
+            <a-entity obj-model='obj: #torre-obj; mtl: #torre-mtl' scale="10 10 10" rotation='0 0 0' position='1.3 -0.2 1.5'></a-entity>
+        </a-marker>
+
+<!-- Second Player -->
+
+        <a-marker type='barcode' value='16'>
+            <a-entity obj-model='obj: #bispob-obj; mtl: #bispob-mtl' scale="10 10 10" rotation='0 0 0' position='1.5 -0.1 0.1'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='17'>
+            <a-entity obj-model='obj: #bispob-obj; mtl: #bispob-mtl' scale="10 10 10" rotation='0 0 0' position='1.5 -0.1 0.1'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='18'>
+            <a-entity obj-model='obj: #peaob-obj; mtl: #peaob-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='19'>
+            <a-entity obj-model='obj: #peaob-obj; mtl: #peaob-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='20'>
+            <a-entity obj-model='obj: #peaob-obj; mtl: #peaob-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='21'>
+            <a-entity obj-model='obj: #peaob-obj; mtl: #peaob-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='22'>
+            <a-entity obj-model='obj: #peaob-obj; mtl: #peaob-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='23'>
+            <a-entity obj-model='obj: #peaob-obj; mtl: #peaob-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='24'>
+            <a-entity obj-model='obj: #peaob-obj; mtl: #peaob-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='25'>
+            <a-entity obj-model='obj: #peaob-obj; mtl: #peaob-mtl' scale="10 10 10" rotation='0 0 0' position='1 0 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='26'>
+            <a-entity obj-model='obj: #cavalob-obj; mtl: #cavalob-mtl' scale="10 10 10" rotation='0 0 0' position='1.5 -0.2 1'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='27'>
+            <a-entity obj-model='obj: #cavalob-obj; mtl: #cavalob-mtl' scale="10 10 10" rotation='0 0 0' position='1.5 -0.2 1'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='28'>
+            <a-entity obj-model='obj: #rainhab-obj; mtl: #rainhab-mtl' scale="10 10 10" rotation='0 0 0' position='1.3 -0.05 -1'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='29'>
+            <a-entity obj-model='obj: #reib-obj; mtl: #reib-mtl' scale="10 10 10" rotation='0 0 0' position='1.4 -0.1 -0.3'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='30'>
+            <a-entity obj-model='obj: #torreb-obj; mtl: #torreb-mtl' scale="10 10 10" rotation='0 0 0' position='1.3 -0.2 1.5'></a-entity>
+        </a-marker>
+        <a-marker type='barcode' value='31'>
+            <a-entity obj-model='obj: #torreb-obj; mtl: #torreb-mtl' scale="10 10 10" rotation='0 0 0' position='1.3 -0.2 1.5'></a-entity>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
